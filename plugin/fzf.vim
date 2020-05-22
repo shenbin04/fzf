@@ -723,7 +723,7 @@ function! s:execute_term(dict, command, temps) abort
     endif
 
     if bufexists(self.buf)
-      execute 'bd!' self.buf
+      execute 'bw!' self.buf
     endif
 
     if &lines == self.lines && &columns == self.columns && s:getpos() == self.ppos
